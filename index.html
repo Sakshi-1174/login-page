@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <p>Please enter your details</p>
+        <h1>Welcome back</h1>
+      
+
+      <form action="#">
+        <div class="input-box">
+          <input type="Email" placeholder="Email address" id="email" />
+        </div>
+        <div class="input-box">
+          <input
+            type="Password"
+            placeholder=" Password"
+            name="password"
+            id="password"
+            required
+          />
+        </div>
+        <div class="remember-forgot">
+          <label> <input type="checkbox" /> Remember for 30 days</label>
+          <a href="#">Forgot Password?</a>
+        </div>
+
+        <button type="submit" class="btn" onclick="login()" >Sign in</button>
+
+<p id="error_msg" style="color:red ;font-size:13px;margin: 0;
+    padding: 0;"> </p>
+
+        <button class="google-btn">
+          <img
+            src="https://tse4.mm.bing.net/th/id/OIP.dto_UknSThfSRMLbtm2PGQHaHh?pid=Api&P=0&h=180"
+            alt=""
+          />sign up with google
+        </button>
+        <div class="register-link">
+          <p>Don't have an account?<a href="#"> Sign up</a></p>
+
+        </div>
+      </form>
+      </div>
+    </div>
+
+
+    <script>
+        function login(){
+           const email= document.getElementById("email").value;
+            const password= document.getElementById("password").value;
+            const error_msg=document.getElementById("error_msg");
+            const correctEmail="kunal@gmail.com";
+            const correctPassword="kunal@123";
+            if(email===correctEmail && password===correctPassword){
+                alert("user log in successfully");
+                window.location.href="dashboard.html";
+            }
+            else{
+              error_msg.textContent="invalid email and password";
+            }
+
+
+        }
+    </script>
+  </body>
+</html>

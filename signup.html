@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+</head>
+
+<style>
+    *{
+    margin:0 ;
+    padding: 0;
+    border-radius: 5px;
+    border: none;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+    
+    
+}
+
+body{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+ 
+}
+
+.container{
+    width: 500px;
+    height: 700px;
+    background: white;
+    color:black;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.08)
+  
+}
+
+.container h2 {
+font-size:36px;
+text-align: center;
+ margin: 30px;
+}
+.row  {
+    display: flex;
+    gap:10px;
+
+}
+
+.row input{
+    width: 40%;
+    border: none;
+    border:1px solid rgba(237, 247, 250, 0.896) ;
+    border-radius:6px ;
+    font-size: 15px;
+    padding: 20px;
+    
+
+}
+.row .first{
+     margin-left:40px;
+}
+
+.row .last{
+    margin-right:57px;
+}
+
+
+.input-box input{
+  width: 80%;
+    border: none;
+    border:1px solid rgba(237, 247, 250, 0.896) ;
+    border-radius:6px ;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 20px;
+    margin:10px 40px 10px ;
+}
+
+
+.term{
+    margin: 10px 40px 10px;
+    font-size: 16px;
+}
+.term a{
+    text-decoration: none;
+    color: rgba(47, 12, 162, 0.912);
+}
+
+
+button{
+   width: 80%;
+    height: 45px;
+    background-color: blue;
+    color:white ;
+    font-size: 16px;
+    font-weight: 300; 
+    font-style: bold;
+    border:none ;
+    border-radius: 6px; 
+    cursor:pointer ;
+    padding:4px;
+    margin: 20px 45px ;
+}
+button:hover{
+     background-color: #0056b3 ;
+}
+ .sign-link{
+    
+    margin: 5px 40px 15px;
+    text-align: center;
+}
+.sign-link a{
+    text-decoration:none;
+    color: rgba(47, 12, 162, 0.912);
+}
+
+
+</style>
+<body>
+    <div class="container">
+        <h2> Register</h2>
+       <div class="card">
+            <form action="#">
+                <div class="row">
+                <input type="text"  class="first" placeholder="First Name"  required>
+              <input type="text" class="last" placeholder="Last Name"   required>
+              </div>
+
+              
+               <div class="input-box">
+              <input type="email"  placeholder="Email"    required>
+              </div>
+
+              <div class="input-box">
+              <input type="tel"  placeholder="Contact Number"  required>
+               </div>
+              <div class="input-box">
+              <input type="password"  placeholder="Password"    required>
+              </div>
+              <div class="input-box">
+              <input type="password"  placeholder="Conform password" 
+                required></div>
+
+             
+            <div class="term">
+              <label><input type="checkbox" /> I accept the <a href="#">term of use</a> & 
+                  <a href="#">privacy policy</a></label>
+              
+              </div>
+              <button type="submit"> Register Now</button>
+                </div>
+                <div class="sign-link">
+               <p> Already have an account?<a href="#"> Sign in</a></p>
+
+              </div>
+            </form>
+            </div>
+
+
+    </div>
+</body>
+</html>
